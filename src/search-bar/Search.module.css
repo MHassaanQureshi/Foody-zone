@@ -1,0 +1,12 @@
+.inputContainer{
+    padding: 0%;
+    width: 50%;
+}
+.inputContainer input{
+    width: 70%;
+    background: transparent;
+    border: 1px solid red;
+    height:10px;
+    padding: 10px;
+    color: red;
+}

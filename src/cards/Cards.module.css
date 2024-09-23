@@ -1,0 +1,51 @@
+.CardContainer {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.CardContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.UpperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UpperContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.innerContainer {
+    padding-left: 15px;
+}
+
+.innerContainer p {
+    color: #ffffff;
+}
+
+.innerContainer button {
+    background-color: #ff0a0a8b;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (width<= 768px){
+    .CardContainer{
+        width: 90%;
+    }
+}

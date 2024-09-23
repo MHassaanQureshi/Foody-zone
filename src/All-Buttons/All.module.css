@@ -1,0 +1,28 @@
+.Buttoncontainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Buttoncontainer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (width<= 768px){
+    .Buttoncontainer{
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+    }
+}

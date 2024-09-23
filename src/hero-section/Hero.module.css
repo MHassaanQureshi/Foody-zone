@@ -1,0 +1,55 @@
+/* Style for the background container */
+.HeroContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/hero-img.png");
+  background-size: cover;
+  background-position: center;
+
+  z-index: 1; 
+  overflow: hidden;
+}
+
+/* Black overlay on top of the HeroContainer */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+
+}
+
+/* Content that appears above the background and overlay */
+.products {
+  position: relative;
+  z-index: 3; /* Highest z-index to ensure it appears above everything */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.cards1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (width<= 768px){
+  .cards{
+    flex-direction: column;
+    gap: 30px;
+
+  }
+  .cards1{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
